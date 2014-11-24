@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--TODO : unweebafy-->
+<!-- homepage by noha javascript by nullbyte -->
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Welcome</title>
+<link rel="stylesheet" href="animations.css">
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<script src="jq.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="icon_cchara.png" />
+
+<title>Welcome</title>
+
+</head>
+<body>
+<video autoplay loop id="bgvid">
+<source src="CMO.mp4" type="video/mp4">
+</video>
+	
+	<!--<img id="lel" src="1386384183955.png" width="450px"> -->
+    <h1 id="message" class="expandUp row"></h1>
+        <!--<script type="text/javascript">
+            var d = new Date();
+            var n = d.getHours();
+            if ( n == 23 || n == 0) {
+                    message = "<img src='goodnight.png'></img>";
+            } else if ( n >= 1 && n <= 4 ) {
+                    message = "<img src='goodnight.png'></img>";
+            } else if ( n >= 5 && n <= 11 ) {
+                    message = "<img src='goodmorning.png'></img>";
+            } else if ( n >= 12 && n <= 17 ) {
+                    message = "<img src='goodafternoon.png'></img>";
+            } else if ( n >= 18 && n <= 22 ) {
+                    message = "<img src='goodevening.png'></img>";
+            }
+            document.getElementById("message").innerHTML = message;
+        </script> -->
+    <div class="boxed row" class="slideUp">
+        
+        <div class="item" id="social">
+            <span class="label"><i class="fa fa-users"></i></span><!--
+         --><a href="http://facebook.com.au/">facebook</a><!--
+         --><a href="http://web.tweetdeck.com/">twitter</a><!--
+         --><a href="http://tumblr.com/">tumblr</a><!--
+         --><a href="http://facepunch.com/">punch</a><!--
+		 --><a href="http://plus.google.com/">plus</a><!--
+		 --><a href="http://eu.finalfantasyxiv.com/lodestone/">stone</a>
+        </div>
+        <div class="item" id="chan">
+            <span class="label"><i class="fa fa-star"></i></span><!--
+         --><a href="https://boards.4chan.org/w/">wall</a><!--
+         --><a href="https://boards.4chan.org/v/">video</a><!--
+         --><a href="https://boards.4chan.org/a/">anime</a><!--
+         --><a href="https://boards.4chan.org/gd/">design</a><!--
+         --><a href="https://boards.4chan.org/g/">tech</a>
+        </div>
+		<div class="item" id="rss">
+            <span class="label"><i class="fa fa-rss"></i></span><!--
+         --><a href="http://www.androidpolice.com/">police</a><!--
+         --><a href="http://www.neowin.net/">neowin</a>
+        </div>
+		<div class="item" id="music">
+            <span class="label"><i class="fa fa-youtube-play"></i></span><!--
+         --><a href="https://www.youtube.com/feed/subscriptions">tube</a><!--
+         --><a href="https://soundcloud.com/stream">soundcloud</a>
+        </div>
+        <div class="item" id="mail">
+            <span class="label"><i class="fa fa-envelope"></i></span><!--
+         --><a href="http://mail.live.com/">d-mail</a><!--
+         --><a href="http://desksms.appspot.com/">sms</a>
+        </div>
+        <div class="item" id="school">
+            <span class="label"><i class="fa fa-university"></i></span><!--
+         --><a href="https://foo">link</a><!--
+         --><a href="https://foo">data</a><!--
+		 --><a href="http://foo">station</a>
+        </div>
+        <form method="get" action="http://www.google.com/search"> <input type="text" placeholder="Search..." value="" name="q"></form>
+    </div>
+
+<script>
+$(window).scroll(function() {
+    $('#animatedElement').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+            $(this).addClass("slideUp");
+        }
+    });
+});
+</script>
+
+
+    </body>
+
